@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h2>{{ tituloVar }}</h2> <br>
+        <hr><br>
+        <form method="POST" action=""> {% csrf_token %}
+            {{ formVar.as_p }}
+            <input type="submit" value="Enviar">
+        </form>
+    </body>
+</html>
